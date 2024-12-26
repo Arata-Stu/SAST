@@ -2,6 +2,7 @@ from pathlib import Path
 from typing import Any, List, Optional
 
 import h5py
+import hdf5plugin
 import numpy as np
 import torch
 from torchdata.datapipes.map import MapDataPipe
