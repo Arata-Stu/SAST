@@ -72,7 +72,7 @@ class SAST_block(nn.Module):
                                           norms=[norm_layer(dim), norm_layer(dim)])
         if first_block:
             self.to_scores = nn.Linear(dim, dim)
-            self.to_controls = PositiveLinear(20, dim, bias=False)
+            self.to_controls = PositiveLinear(3, dim, bias=False)
             torch.nn.init.constant_(self.to_controls.weight, 1)
             self.act = nn.ReLU()
 
