@@ -9,6 +9,7 @@ mdl_cfg = "tiny"  # MDL_CFGの値を指定
 data_dir = "/home/metis/Arata_repos/pre_gen1"  # DATA_DIRの値を指定
 artifact_name = ""
 
+sampling = "random"
 input_channels = 3  # 入力チャンネル数
 event_frame_dts = [5, 10, 20, 100]  # 必要に応じて値を追加
 
@@ -21,6 +22,7 @@ for dt in event_frame_dts:
     hardware.num_workers.train={train_workers_per_gpu} hardware.num_workers.eval={eval_workers_per_gpu} \
     dataset.ev_repr_name="'event_frame_dt={dt}'" model.backbone.input_channels={input_channels} \
     training.max_steps=200000 wandb.resume_only_weights=True wandb.artifact_name="{artifact_name}" \
+    dataset.train.sampling={sampling} 
     """
     print(f"Running command for gen1 event_frame_dt={dt}")
     os.system(command)  # 実際にコマンドを実行
