@@ -6,7 +6,7 @@ batch_size_per_gpu = 12
 train_workers_per_gpu = 6
 eval_workers_per_gpu = 2
 mdl_cfg = "tiny"  # MDL_CFGの値を指定
-data_dir = "/home/arata22/dataset/pre_gen4"  # DATA_DIRの値を指定
+data_dir = "./datasets/pre_gen4"  # DATA_DIRの値を指定
 
 sampling = "random"
 input_channels = 3  # 入力チャンネル数
