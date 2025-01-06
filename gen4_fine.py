@@ -10,7 +10,7 @@ data_dir = "/home/metis/Arata_repos/pre_gen4"  # DATA_DIRの値を指定
 artifact_name = ""
 
 input_channels = 3  # 入力チャンネル数
-event_frame_dts = [5]  # 必要に応じて値を追加
+event_frame_dts = [5, 10, 20, 100]  # 必要に応じて値を追加
 
 # ループ処理
 for dt in event_frame_dts:
