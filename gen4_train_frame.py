@@ -19,7 +19,7 @@ gpu_ids_str = ",".join(map(str, gpu_ids))
 for dt in event_frame_dts:
     data_dir = f"{base_data_dir}_{dt}"
     command = f"""
-    python3 train.py model=rnndet dataset=gen1 dataset.path={data_dir} wandb.project_name=part2_SAST_gen4_frame_{dt} \
+    python3 train.py model=rnndet dataset=gen4 dataset.path={data_dir} wandb.project_name=part2_SAST_gen4_frame_{dt} \
     wandb.group_name=1mpx +experiment/gen4={mdl_cfg}.yaml hardware.gpus="[ {gpu_ids_str} ]" \
     batch_size.train={batch_size_per_gpu} batch_size.eval={batch_size_per_gpu} \
     hardware.num_workers.train={train_workers_per_gpu} hardware.num_workers.eval={eval_workers_per_gpu} \
