@@ -51,8 +51,9 @@ split_name_2_type = {
     'test': SplitType.TEST,
 }
 
-dataset_2_height = {'gen1': 240, 'gen4': 720}
-dataset_2_width = {'gen1': 304, 'gen4': 1280}
+dataset_2_height = {'gen1': 240, 'gen4': 720, 'dsec': 480}
+dataset_2_width = {'gen1': 304, 'gen4': 1280, 'dsec': 640}
+
 
 # The following sequences would be discarded because all the labels would be removed after filtering:
 dirs_to_ignore = {

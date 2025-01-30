@@ -24,7 +24,7 @@ class DetectionVizCallback(VizCallbackBase):
         dataset_name = config.dataset.name
         if dataset_name == 'gen1':
             self.label_map = LABELMAP_GEN1
-        elif dataset_name == 'gen4':
+        elif dataset_name == 'gen4' or dataset_name == 'dsec':
             self.label_map = LABELMAP_GEN4_SHORT
         else:
             raise NotImplementedError
