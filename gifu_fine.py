@@ -27,7 +27,7 @@ for dt in event_frame_dts:
     artifact_name = artifact_names.get(dt, "default-artifact")  # デフォルト値を設定する場合
 
     command = f"""
-    python3 train.py model=rnndet dataset=gifu dataset.path={data_dir} wandb.project_name=part2_RVT_gifu_frame_{dt} \
+    python3 train.py model=rnndet dataset=gifu dataset.path={data_dir} wandb.project_name=part2_SAST_gifu_frame_{dt} \
     wandb.group_name=gifu +experiment/gifu={mdl_cfg}.yaml hardware.gpus={gpu_ids} \
     batch_size.train={batch_size_per_gpu} batch_size.eval={batch_size_per_gpu} \
     hardware.num_workers.train={train_workers_per_gpu} hardware.num_workers.eval={eval_workers_per_gpu} \
