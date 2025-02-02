@@ -23,7 +23,7 @@ artifact_names = {
 
 # ループ処理
 for dt in event_frame_dts:
-    data_dir = f"{base_data_dir}_{dt}"
+    data_dir = f"{base_data_dir}"
     artifact_name = artifact_names.get(dt, "default-artifact")  # デフォルト値を設定する場合
 
     command = f"""
