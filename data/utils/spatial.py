@@ -6,6 +6,7 @@ _type_2_hw = {
     DatasetType.GEN1: (240, 304),
     DatasetType.GEN4: (720, 1280),
     DatasetType.DSEC: (480, 640),
+    DatasetType.GIFU: (480, 640),
 }
 
 _str_2_type = {
