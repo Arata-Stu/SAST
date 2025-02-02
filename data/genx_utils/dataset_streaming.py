@@ -60,6 +60,8 @@ def get_sequences(path: Path, dataset_config: DictConfig, guarantee_labels: bool
         dataset_type = DatasetType.GEN4
     elif dataset_config.name == 'dsec':
         dataset_type = DatasetType.DSEC
+    elif dataset_config.name == 'gifu':
+        dataset_type = DatasetType.GIFU
     else:
         raise NotImplementedError
     ####################################

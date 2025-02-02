@@ -12,6 +12,7 @@ _str_2_type = {
     'gen1': DatasetType.GEN1,
     'gen4': DatasetType.GEN4,
     'dsec': DatasetType.DSEC,
+    'gifu': DatasetType.GIFU,
 }
 
 
