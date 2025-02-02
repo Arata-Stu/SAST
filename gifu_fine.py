@@ -14,11 +14,11 @@ input_channels = 3  # 入力チャンネル数
 # event_frame_dts に対応する artifact_name を指定
 event_frame_dts = [5, 10, 20, 50, 100]  
 artifact_names = {
-    5: "iasl_at-gifu-university/part2_RVT_gen4_frame_5/checkpoint-ysxxqiip-last:v19",
-    10: "iasl_at-gifu-university/part2_RVT_gen4_frame_10/checkpoint-5c3hgzh2-last:v19",
-    20: "iasl_at-gifu-university/part2_RVT_gen4_frame_20/checkpoint-4s14997x-last:v19",
-    50: "iasl_at-gifu-university/part2_RVT_gen4_frame50/checkpoint-fbjr3fbh-last:v39",
-    100: "iasl_at-gifu-university/part2_RVT_gen4_frame_100/checkpoint-4ohzg5or-last:v0",
+    5: "iasl_at-gifu-university/part2_SAST_gen4_frame_5/checkpoint-2yr8x0rj-last:v19",
+    10: "iasl_at-gifu-university/part2_SAST_gen4_frame_10/checkpoint-lybwxd67-last:v19",
+    20: "iasl_at-gifu-university/part2_SAST_gen4_frame_20/checkpoint-aand4ck2-last:v19",
+    50: "iasl_at-gifu-university/part2_SAST_gen4_frame_50/checkpoint-0itz9uo5-last:v38",
+    100: "iasl_at-gifu-university/part2_SAST_gen4_frame_100/checkpoint-edm2yy9n-last:v19",
 }
 
 # ループ処理
